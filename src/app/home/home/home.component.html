@@ -1,0 +1,31 @@
+<div style="text-align: center;">
+    <section>
+        <br />
+        <input type="text" name="playerName" id="playerName" placeholder="Enter your name"><br /><br />
+    </section>
+    <section>
+        <label id="selectMode"> Select Your Game Mode : &nbsp;</label>
+        <mat-radio-group aria-labelledby="selectMode">
+            <mat-radio-button> Arcade </mat-radio-button>
+            <mat-radio-button> Battle Ground </mat-radio-button>
+        </mat-radio-group>
+        <br />
+    </section>
+    <section>
+        <br />
+        <!--<label id="selectLevel"> Select Your Difficulty level : &nbsp;</label>
+        <mat-radio-group aria-labelledby="selectLevel">
+            <mat-radio-button> Level 1 </mat-radio-button>
+            <mat-radio-button> Level 2 </mat-radio-button>
+            <mat-radio-button> Level 3 </mat-radio-button>
+        </mat-radio-group>-->
+        <br />
+    </section>
+    <section>
+        <br />
+        <br />
+        <button type="submit" (click)="goToPlay()"> Start </button>
+    </section>
+</div>
+
+<app-scores></app-scores>
